@@ -1,4 +1,4 @@
-public class ResidentialSite extends Site{
+public class ResidentialSite extends Site {
     public ResidentialSite(double _units, double _rate) {
         super(_units, _rate);
     }
@@ -7,7 +7,6 @@ public class ResidentialSite extends Site{
         return get_units() * get_rate();
     }
 
-    @Override
     public double getTaxAmount() {
         return getBaseAmount() * TAX_RATE;
     }
